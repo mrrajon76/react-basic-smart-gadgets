@@ -1,0 +1,7 @@
+.header-container {
+  background-color: #ffbb00;
+  padding: 15px;
+}
+.header-container img {
+  max-height: 63px;
+}
