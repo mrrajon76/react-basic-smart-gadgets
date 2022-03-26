@@ -12,8 +12,10 @@
   font-weight: 800;
 }
 .question-block p {
+  font-size: 17px;
   margin: 10px 0;
 }
+/* tablet device responsive */
 @media only screen and (max-width: 1050px) {
   .container {
     margin: 40px 30px 0;

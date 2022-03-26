@@ -55,6 +55,7 @@
     margin: 30px 30px 0;
   }
 }
+/* mobile device responsive */
 @media only screen and (max-width: 600px) {
   .shop-container {
     grid-template-columns: 1fr;

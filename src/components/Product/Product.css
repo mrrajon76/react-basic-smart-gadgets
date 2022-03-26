@@ -39,6 +39,7 @@
   background-color: #222222;
   color: #ffffff;
 }
+/* tablet device responsive */
 @media only screen and (max-width: 1050px) {
   .product-image img {
     max-width: 250px;
