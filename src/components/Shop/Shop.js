@@ -51,9 +51,8 @@ const Shop = () => {
 
     // handle choose the lucky product
     const chooseLuckyOne = () => {
-        const luckyNumber = cart[Math.floor((Math.random() * 4))];
-        const luckyProductName = luckyNumber.name;
-        alert('Your Lucky Product is: ' + luckyProductName);
+        const luckyProduct = cart[Math.floor((Math.random() * 4))];
+        alert('Your Lucky Product is: ' + luckyProduct.name);
     }
 
     // handle reset cart
@@ -72,17 +71,25 @@ const Shop = () => {
                 }
             </div>
 
-            {/* cart items */}
+            {/* cart container */}
             <div className='cart-container'>
                 <div className="cart">
                     <h2>Cart Details</h2>
+                    {/* cart items */}
                     {
                         cart.map(cartItem => <Cart data={cartItem} key={cartItem.id} remove={deleteFromCart}></Cart>)
                     }
 
-                    <button className='luckyOne' onClick={chooseLuckyOne}>My Lucky Product</button>
+                    {/* lucky one button */}
+                    {
+                        cart.length ? <button className='luckyOne' onClick={chooseLuckyOne}>My Lucky Product</button> : <span></span>
+                    }
                     <br />
-                    <button className='resetCart' onClick={resetCart}>Reset Cart</button>
+                    {/* reset cart button */}
+                    {
+                        cart.length ? <button className='resetCart' onClick={resetCart}>Reset Cart</button> : <span></span>
+                    }
+
 
                 </div>
             </div>

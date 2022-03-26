@@ -39,3 +39,9 @@
   background-color: #222222;
   color: #ffffff;
 }
+@media only screen and (max-width: 1050px) {
+  .product-image img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
