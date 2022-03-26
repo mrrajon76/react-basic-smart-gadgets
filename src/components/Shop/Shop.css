@@ -1,6 +1,21 @@
+.shop-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+}
 .products-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   margin: 50px;
+}
+.cart-container {
+  padding: 20px;
+  box-shadow: 2px 2px 30px #cacaca;
+}
+.cart-container h2 {
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  color: #ffbb00;
+  font-weight: 800;
 }
