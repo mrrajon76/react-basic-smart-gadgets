@@ -28,6 +28,21 @@ const Shop = () => {
             alert('Sorry! You can only add 4 products to the cart')
         }
     }
+    const deleteFromCart = (deleteItem) => {
+        const remainingItems = cart.filter(item => item.id !== deleteItem.id);
+        setCart(remainingItems);
+    }
+
+    // const chooseLuckyOne = () => {
+    //     const luckyNumber = Math.floor((Math.random() * 4));
+    //     const luckyProduct = cart[luckyNumber].name;
+
+    //     alert('Your Lucky Product is: ' + luckyProduct);
+    // }
+    // const resetCart = () => {
+    //     const empty = [];
+    //     setCart(empty);
+    // }
 
     return (
         <div className="shop-container">
@@ -37,7 +52,17 @@ const Shop = () => {
                 }
             </div>
             <div className='cart-container'>
-                <Cart data={cart}></Cart>
+                <div className="cart">
+                    <h2>Cart Details</h2>
+                    {
+                        cart.map(cartItem => <Cart data={cartItem} key={cartItem.id} remove={deleteFromCart}></Cart>)
+                    }
+
+                    {/* <button className='luckyOne' onClick={chooseLuckyOne}>My Lucky Product</button>
+                    <br />
+                    <button className='resetCart' onClick={resetCart}>Reset Cart</button> */}
+
+                </div>
             </div>
         </div>
     );
