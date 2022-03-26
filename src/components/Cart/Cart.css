@@ -1,0 +1,26 @@
+.cart {
+  position: sticky;
+  top: 0;
+}
+.cart h2 {
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  color: #ffbb00;
+  font-weight: 800;
+}
+.cart-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-product p {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.cart-product img {
+  padding: 3px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #ffbb00;
+  border-radius: 50px;
+}

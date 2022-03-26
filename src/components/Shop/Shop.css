@@ -10,12 +10,6 @@
   margin: 50px;
 }
 .cart-container {
-  padding: 20px;
+  padding: 25px;
   box-shadow: 2px 2px 30px #cacaca;
-}
-.cart-container h2 {
-  margin: 0 0 15px;
-  text-transform: uppercase;
-  color: #ffbb00;
-  font-weight: 800;
 }
