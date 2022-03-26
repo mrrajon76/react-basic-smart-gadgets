@@ -6,10 +6,10 @@
     "price": 49500
   },
   {
-    "id": "623e50008ae8f130dec03f3e",
-    "image": "./Watches/mibro-x1.jpg",
-    "name": "Mibro X1",
-    "price": 3750
+    "id": "623e5000b16966cbc39e1268",
+    "image": "./Watches/huawei-gt2.jpg",
+    "name": "Huawei Watch GT 2",
+    "price": 16999
   },
   {
     "id": "623e5000aaaec4969704d439",
@@ -30,12 +30,6 @@
     "price": 3500
   },
   {
-    "id": "623e5000b16966cbc39e1268",
-    "image": "./Watches/huawei-gt2.jpg",
-    "name": "Huawei Watch GT 2",
-    "price": 16999
-  },
-  {
     "id": "623e5000eb68b55225b0ae81",
     "image": "./Watches/amazfit-bip-u-pro.jpg",
     "name": "Amazfit Bip U Pro",
@@ -46,6 +40,12 @@
     "image": "./Watches/huawei-fit.png",
     "name": "Huawei Watch Fit",
     "price": 9999
+  },
+  {
+    "id": "623e50008ae8f130dec03f3e",
+    "image": "./Watches/mibro-x1.jpg",
+    "name": "Mibro X1",
+    "price": 3750
   },
   {
     "id": "623f68008ae8f130dec17u7s",
@@ -60,7 +60,7 @@
     "price": 3850
   },
   {
-    "id": "623e50008ae8f130dec03f3e",
+    "id": "623e50008ae8f130dec09s9d",
     "image": "./Watches/mibro-x1.jpg",
     "name": "Mibro X1",
     "price": 3750

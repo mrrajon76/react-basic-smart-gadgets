@@ -1,13 +1,16 @@
 import React from 'react';
+import './Shop.css'
 
 const Shop = (props) => {
     const { id, image, name, price } = props.data;
     return (
-        <div>
+        <div className='product-card'>
             <img src={image} alt="" />
-            <h2>{name}</h2>
-            <p>{price} TK</p>
-            <button>Add to cart</button>
+            <div className="product-desc">
+                <h3>{name}</h3>
+                <p>{price} TK</p>
+                <button>Add to cart</button>
+            </div>
         </div>
     );
 };
