@@ -1,0 +1,40 @@
+.product-card {
+  box-shadow: 2px 2px 30px #cacaca;
+  border-radius: 8px;
+}
+.product-image {
+  padding: 20px;
+}
+.product-image img {
+  max-width: 300px;
+}
+.product-desc {
+  padding: 25px;
+  background-color: #ffbb00;
+}
+.product-desc h3 {
+  text-transform: uppercase;
+  color: #222222;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+.product-desc p {
+  margin: 15px 0;
+  font-size: 17px;
+}
+.product-desc button {
+  background-color: #ffffff;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-desc button:hover {
+  background-color: #222222;
+  color: #ffffff;
+}

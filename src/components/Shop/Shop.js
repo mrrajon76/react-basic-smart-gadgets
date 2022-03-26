@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Product from '../Product/Product';
 import './Shop.css'
 
-const Shop = (props) => {
-    const { id, image, name, price } = props.data;
+const Shop = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setProducts(data))
+    }, []);
+
+    const cartButtonClick = (id) => {
+        console.log(id);
+    }
+
     return (
-        <div className='product-card'>
-            <img src={image} alt="" />
-            <div className="product-desc">
-                <h3>{name}</h3>
-                <p>{price} TK</p>
-                <button>Add to cart</button>
+        <div className="shop-container">
+            <div className='products-container'>
+                {
+                    products.map(product => <Product key={product.id} data={product} click={cartButtonClick}></Product>)
+                }
+            </div>
+            <div className='cart-container'>
+
+
             </div>
         </div>
     );
