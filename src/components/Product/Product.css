@@ -7,6 +7,7 @@
 }
 .product-image img {
   max-width: 300px;
+  max-height: 300px;
 }
 .product-desc {
   padding: 25px;
