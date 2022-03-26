@@ -1,6 +1,6 @@
 # Getting Started with Smart Gadgets
 
-##First of all, let's check out the ['Smart Gadgets'](https://smart-gadgets-mrr.netlify.app/).
+## First of all, let's check out the ['Smart Gadgets'](https://smart-gadgets-mrr.netlify.app/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
