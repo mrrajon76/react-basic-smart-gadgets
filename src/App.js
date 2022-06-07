@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Questions from './components/Questions/Questions';
+// import Questions from './components/Questions/Questions';
 import Shop from './components/Shop/Shop';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Shop></Shop>
-      <Questions></Questions>
+      {/* <Questions></Questions> */}
     </div>
   );
 }
